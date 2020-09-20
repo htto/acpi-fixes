@@ -1,0 +1,7 @@
+*.aml
+*.bak
+*.dat
+*.dsl
+*.orig
+*~
+kernel/
