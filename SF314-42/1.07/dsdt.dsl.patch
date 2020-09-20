@@ -1,0 +1,20 @@
+--- dsdt.dsl	2020-09-20 11:16:44.146081451 +0200
++++ dsdt.dsl	2020-09-20 11:17:24.829191538 +0200
+@@ -18,7 +18,7 @@
+  *     Compiler ID      "1025"
+  *     Compiler Version 0x00040000 (262144)
+  */
+-DefinitionBlock ("", "DSDT", 1, "ACRSYS", "ACRPRDCT", 0x00000002)
++DefinitionBlock ("", "DSDT", 1, "ACRSYS", "ACRPRDCT", 0x00000003)
+ {
+     /*
+      * iASL Warning: There were 9 external control methods found during
+@@ -809,7 +809,7 @@ DefinitionBlock ("", "DSDT", 1, "ACRSYS"
+     })
+     If ((CNSB == Zero))
+     {
+-        If ((DAS3 == One))
++        If (One)
+         {
+             Name (_S3, Package (0x04)  // _S3_: S3 System State
+             {
