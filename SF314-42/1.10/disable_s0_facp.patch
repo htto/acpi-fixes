@@ -1,0 +1,20 @@
+--- facp.dsl.orig	2021-07-27 21:09:44.617332998 +0200
++++ facp.dsl	2021-07-27 21:16:58.152613179 +0200
+@@ -16,7 +16,7 @@
+ [009h 0009   1]                     Checksum : 2D
+ [00Ah 0010   6]                       Oem ID : "ACRSYS"
+ [010h 0016   8]                 Oem Table ID : "ACRPRDCT"
+-[018h 0024   4]                 Oem Revision : 00000002
++[018h 0024   4]                 Oem Revision : 00000003
+ [01Ch 0028   4]              Asl Compiler ID : "1025"
+ [020h 0032   4]        Asl Compiler Revision : 00040000
+ 
+@@ -85,7 +85,7 @@
+                  Use APIC Cluster Model (V4) : 0
+      Use APIC Physical Destination Mode (V4) : 0
+                        Hardware Reduced (V5) : 0
+-                      Low Power S0 Idle (V5) : 1
++                      Low Power S0 Idle (V5) : 0
+ 
+ [074h 0116  12]               Reset Register : [Generic Address Structure]
+ [074h 0116   1]                     Space ID : 01 [SystemIO]
